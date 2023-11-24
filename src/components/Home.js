@@ -8,6 +8,7 @@ import Americas from "../images/Americas.svg";
 import Asia from "../images/Asia.svg";
 import Europe from "../images/Europe.svg";
 import Oceania from "../images/Oceania.svg";
+import "./styles/home.css";
 
 const Home = () => {
   const { isLoading, error, countries } = useSelector(
