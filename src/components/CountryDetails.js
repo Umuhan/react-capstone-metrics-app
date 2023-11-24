@@ -1,7 +1,7 @@
-import React from "react";
-import { useSelector } from "react-redux";
-import { HiOutlineArrowCircleRight } from "react-icons/hi";
-import "./styles/countryDetails.css";
+import React from 'react';
+import { useSelector } from 'react-redux';
+import { HiOutlineArrowCircleRight } from 'react-icons/hi';
+import './styles/countryDetails.css';
 
 const CountryDetails = () => {
   const { isLoading, country } = useSelector((state) => state.country);
@@ -14,7 +14,7 @@ const CountryDetails = () => {
           <div className="details txtwhite">
             <h2 className="name">
               {countryDetails.commonName}
-              {" / "}
+              {' / '}
               {countryDetails.cca2}
             </h2>
             <div>
@@ -25,7 +25,7 @@ const CountryDetails = () => {
         <div className="headline">
           <h2>
             {countryDetails.commonName}
-            {" / "}
+            {' / '}
             {countryDetails.cca2}
             <span>Details</span>
           </h2>
@@ -51,7 +51,7 @@ const CountryDetails = () => {
               {countryDetails.coatOfArms ? (
                 <img src={countryDetails.coatOfArms} alt="Coat Of Arms" />
               ) : (
-                ""
+                ''
               )}
             </div>
             <HiOutlineArrowCircleRight className="icon1 txtwhite" />
@@ -82,7 +82,7 @@ const CountryDetails = () => {
               <h2>Currency:</h2>
               <h2>
                 {countryDetails.currency}
-                {" / "}
+                {' / '}
                 {countryDetails.currencySymbol}
               </h2>
             </div>
@@ -91,14 +91,22 @@ const CountryDetails = () => {
           <li className="item">
             <div className="list-item">
               <h2>Area:</h2>
-              <h2> {countryDetails.area} sq km</h2>
+              <h2>
+                {' '}
+                {countryDetails.area}
+                {' '}
+                sq km
+              </h2>
             </div>
             <HiOutlineArrowCircleRight className="icon1 txtwhite" />
           </li>
           <li className="item">
             <div className="list-item">
               <h2>Population:</h2>
-              <h2> {countryDetails.population}</h2>
+              <h2>
+                {' '}
+                {countryDetails.population}
+              </h2>
             </div>
             <HiOutlineArrowCircleRight className="icon1 txtwhite" />
           </li>

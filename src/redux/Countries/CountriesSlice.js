@@ -1,11 +1,11 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
-import { v4 as uuidv4 } from "uuid";
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
+import { v4 as uuidv4 } from 'uuid';
 
-const apiLink = "https://restcountries.com/v3.1/all";
+const apiLink = 'https://restcountries.com/v3.1/all';
 
 export const getCountriesData = createAsyncThunk(
-  "countries/getCountries",
+  'countries/getCountries',
   async (thunkAPI) => {
     try {
       const response = await axios.get(apiLink);
@@ -13,14 +13,13 @@ export const getCountriesData = createAsyncThunk(
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
     }
-  }
+  },
 );
 
-const num = (number) =>
-  Intl.NumberFormat("en", { notation: "compact" }).format(number);
+const num = (number) => Intl.NumberFormat('en', { notation: 'compact' }).format(number);
 let countriesState = {};
 export const countriesSlice = createSlice({
-  name: "countries",
+  name: 'countries',
   initialState: {
     countries: [],
     isLoading: false,

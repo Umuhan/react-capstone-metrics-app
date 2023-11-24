@@ -1,9 +1,9 @@
-import React from "react";
-import "./index.css";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import CountryDetails from "./components/CountryDetails";
+import React from 'react';
+import './index.css';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import CountryDetails from './components/CountryDetails';
 
 function App() {
   return (

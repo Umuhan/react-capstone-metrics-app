@@ -1,10 +1,10 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
 
-const apiLink = "https://restcountries.com/v3.1/name/";
+const apiLink = 'https://restcountries.com/v3.1/name/';
 
 export const getCountry = createAsyncThunk(
-  "country/getCountry",
+  'country/getCountry',
   async (name) => {
     try {
       const response = await axios.get(apiLink + name);
@@ -12,13 +12,12 @@ export const getCountry = createAsyncThunk(
     } catch (error) {
       return error.message;
     }
-  }
+  },
 );
-const num = (number) =>
-  Intl.NumberFormat("en", { notation: "compact" }).format(number);
+const num = (number) => Intl.NumberFormat('en', { notation: 'compact' }).format(number);
 let countryState = {};
 export const countrySlice = createSlice({
-  name: "country",
+  name: 'country',
   initialState: {
     country: {},
     isLoading: false,
@@ -40,21 +39,21 @@ export const countrySlice = createSlice({
             region: country.region,
             commonName: country.name.common,
             officialName: country.name.official,
-            capital: country.capital ? country.capital[0] : "",
+            capital: country.capital ? country.capital[0] : '',
             language: country.languages
-              ? Object.values(country.languages || "")[0]
-              : "",
+              ? Object.values(country.languages || '')[0]
+              : '',
             timezone: country.timezones[0],
             currency: country.currencies
-              ? Object.values(country.currencies.XPF || "")[0]
-              : "",
+              ? Object.values(country.currencies.XPF || '')[0]
+              : '',
             currencySymbol: country.currencies
-              ? Object.values(country.currencies.XPF || "")[1]
-              : "",
+              ? Object.values(country.currencies.XPF || '')[1]
+              : '',
             area: num(country.area),
             population: num(country.population),
             flag: country.flags.png,
-            coatOfArms: country.coatOfArms ? country.coatOfArms.png : "",
+            coatOfArms: country.coatOfArms ? country.coatOfArms.png : '',
             cca2: country.cca2,
           },
         };

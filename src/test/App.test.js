@@ -1,26 +1,27 @@
-import { render } from "@testing-library/react";
-import { BrowserRouter } from "react-router-dom";
+import { render, screen } from "@testing-library/react";
+import renderer from "react-test-renderer";
 import { Provider } from "react-redux";
 import App from "../App";
 import store from "../redux/store";
+import "@testing-library/jest-dom";
 
-it("Should render App component", () => {
-  const tree = render(
-    <BrowserRouter>
+it("Check if Item component has changed", () => {
+  const tree = renderer
+    .create(
       <Provider store={store}>
         <App />
       </Provider>
-    </BrowserRouter>
-  );
+    )
+    .toJSON();
   expect(tree).toMatchSnapshot();
 });
 
-// it("Check if the App container is there", async () => {
-//   render(
-//     <Provider store={store}>
-//       <App />
-//     </Provider>
-//   );
-//   const container = await screen.findByTestId("nav-test");
-//   expect(container).toBeInTheDocument();
-// });
+it("Check if the App container is there", async () => {
+  render(
+    <Provider store={store}>
+      <App />
+    </Provider>
+  );
+  const container = await screen.findByTestId("nav-test");
+  expect(container).toBeInTheDocument();
+});

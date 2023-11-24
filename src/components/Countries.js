@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Country from "./Country";
-import "./styles/countries.css";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Country from './Country';
+import './styles/countries.css';
 
 const Countries = ({ countries }) => (
   <div className="container" data-testid="countries-test">

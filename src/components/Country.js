@@ -1,11 +1,13 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
-import { HiOutlineArrowCircleRight } from "react-icons/hi";
-import { getCountry } from "../redux/CountryDetails/CountryDetails";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { HiOutlineArrowCircleRight } from 'react-icons/hi';
+import { getCountry } from '../redux/CountryDetails/CountryDetails';
 
-const Country = ({ id, commonName, cca2, flag, population }) => {
+const Country = ({
+  id, commonName, cca2, flag, population,
+}) => {
   const dispatch = useDispatch();
 
   return (
@@ -16,7 +18,7 @@ const Country = ({ id, commonName, cca2, flag, population }) => {
       <div className="text txtwhite">
         <h2 className="name">
           {commonName}
-          {" / "}
+          {' / '}
           {cca2}
         </h2>
         <p>{population}</p>
