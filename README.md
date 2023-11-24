@@ -59,8 +59,7 @@
 
 ## 🔭 Live Demo <a name="future-features"></a>
 
-[Live demo](react-capstone-metrics-app.netlify.app)
-[loom](https://www.loom.com/share/e12a7c58190943aeb1d1ebac082f3f15)
+-[Live demo](react-capstone-metrics-app.netlify.app) -[loom](https://www.loom.com/share/e12a7c58190943aeb1d1ebac082f3f15)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -174,7 +173,9 @@ Thank you for your support and for being a part of this journey!
 
 I would like to give credit to list of contributors:
 
-- [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
+- Credit to Nelson Sakwa the author of this original design, as required by the Creative Commons License.
+  [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
+
 - Microverse Team
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
