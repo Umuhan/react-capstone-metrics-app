@@ -59,7 +59,7 @@ const Home = () => {
 
   const filterCountries2 = (e) => {
     setCountriesData(
-      countries.filter((country) => country.commonName.toLowerCase().includes(e.target.value.toLowerCase())),
+      countries.filter((country) => country.commonName.includes(e.target.value.toLowerCase())),
     );
   };
 

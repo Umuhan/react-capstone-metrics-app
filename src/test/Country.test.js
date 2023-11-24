@@ -1,21 +1,21 @@
-import { render, screen } from "@testing-library/react";
-import renderer from "react-test-renderer";
-import { BrowserRouter } from "react-router-dom";
-import { Provider } from "react-redux";
-import Country from "../components/Country";
-import store from "../redux/store";
-import "@testing-library/jest-dom";
+import { render, screen } from '@testing-library/react';
+import renderer from 'react-test-renderer';
+import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import Country from '../components/Country';
+import store from '../redux/store';
+import '@testing-library/jest-dom';
 
 const country = {
-  id: "1",
-  commonName: "Kenya",
-  region: "Africa",
-  cca2: "KE",
+  id: '1',
+  commonName: 'Kenya',
+  region: 'Africa',
+  cca2: 'KE',
   flag: {
-    png: "https://flagcdn.com/w320/ke.png",
+    png: 'https://flagcdn.com/w320/ke.png',
   },
 };
-it("Check if Item component has changed", () => {
+it('Check if Item component has changed', () => {
   const tree = renderer
     .create(
       <Provider store={store}>
@@ -29,13 +29,13 @@ it("Check if Item component has changed", () => {
           />
           ,
         </BrowserRouter>
-      </Provider>
+      </Provider>,
     )
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
 
-it("Check if the component container is there", async () => {
+it('Check if the component container is there', async () => {
   render(
     <Provider store={store}>
       <BrowserRouter>
@@ -47,8 +47,8 @@ it("Check if the component container is there", async () => {
           flag={country.flag.png}
         />
       </BrowserRouter>
-    </Provider>
+    </Provider>,
   );
-  const container = await screen.findByTestId("country-test");
+  const container = await screen.findByTestId('country-test');
   expect(container).toBeInTheDocument();
 });
