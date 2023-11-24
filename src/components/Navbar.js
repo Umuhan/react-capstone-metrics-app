@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles/home.css";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { IoIosArrowBack, IoIosSettings } from "react-icons/io";
 import { FaMicrophone } from "react-icons/fa";
@@ -7,22 +8,22 @@ const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
   return (
-    <nav className="nav main-color" data-testid="nav-test">
+    <nav className="nav " data-testid="nav-test">
       <div className="navbar">
         <NavLink to="/" onClick={() => navigate("/")}>
-          <IoIosArrowBack className="icon txtwhite" />
+          <IoIosArrowBack className="icon " />
         </NavLink>
-        <h1 className="txtwhite">
+        <h1>
           {location.pathname === "/"
             ? "Countries Info 2023"
             : "Country Details"}
         </h1>
         <div>
           <NavLink to="/country">
-            <FaMicrophone className="icon txtwhite" />
+            <FaMicrophone className="icon " />
           </NavLink>
           <NavLink to="/country">
-            <IoIosSettings className="icon txtwhite" />
+            <IoIosSettings className="icon " />
           </NavLink>
         </div>
       </div>
