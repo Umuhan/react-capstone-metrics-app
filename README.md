@@ -59,7 +59,8 @@
 
 ## 🔭 Live Demo <a name="future-features"></a>
 
--[Live demo](react-capstone-metrics-app.netlify.app) -[loom](https://www.loom.com/share/e12a7c58190943aeb1d1ebac082f3f15)
+- livedDmo: [Live demo](react-capstone-metrics-app.netlify.app)
+- loomVideo: [loom](https://www.loom.com/share/e12a7c58190943aeb1d1ebac082f3f15)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
