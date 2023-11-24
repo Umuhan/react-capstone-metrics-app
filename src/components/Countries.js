@@ -1,9 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Country from "./Country";
+import "./styles/countries.css";
 
 const Countries = ({ countries }) => (
-  <div className="countries" data-testid="countries-test">
+  <div className="container" data-testid="countries-test">
     {countries.map((country) => (
       <Country
         id={country.id}
