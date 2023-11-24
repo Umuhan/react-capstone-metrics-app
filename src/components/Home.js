@@ -72,8 +72,8 @@ const Home = () => {
     return <div style={{ color: "red" }}>There is an error...!</div>;
   }
   return (
-    <div className="home-container main-color" data-testid="home-test">
-      <div className="world-map blue-color txtwhite">
+    <div className="home-container " data-testid="home-test">
+      <div className="world-map  ">
         <div className="map">
           <img src={map} alt="World Map" />
         </div>
@@ -84,19 +84,19 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <div className="headline txtwhite">
-        <div className="stat-txt">
-          <h2 className="txtWhite">Search by Name: </h2>
+      <div className="text ">
+        <div>
+          <h2>Search by Name: </h2>
 
           <input onChange={filterCountries2} type="text" />
         </div>
-        <div className="stat-txt">
-          <h2 className="txtWhite">Search by Region: </h2>{" "}
+        <div>
+          <h2>Search by Region: </h2>{" "}
           <select
             type="text"
+            className="btn"
             value={selected}
             onChange={filterCountries}
-            className="button"
           >
             <option value="All">All</option>
             <option value="Asia">Asia</option>
@@ -107,7 +107,7 @@ const Home = () => {
           </select>
         </div>
       </div>
-      <div className="countries-data">
+      <div className="data">
         <Countries countries={countriesData || countries} />
       </div>
     </div>
