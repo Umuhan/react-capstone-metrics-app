@@ -23,9 +23,9 @@ Array [
         <h2
           className="name"
         >
-          Yemen
+          Kenya
            / 
-          YE
+          KE
         </h2>
         <p />
       </div>
@@ -33,7 +33,7 @@ Array [
         className="link"
       >
         <a
-          href="/country/YE"
+          href="/country/KE"
           onClick={[Function]}
         >
           <svg
@@ -78,9 +78,9 @@ Array [
         <h2
           className="name"
         >
-          Palestine
+          Ethiopia
            / 
-          PS
+          ET
         </h2>
         <p />
       </div>
@@ -88,7 +88,7 @@ Array [
         className="link"
       >
         <a
-          href="/country/PS"
+          href="/country/ET"
           onClick={[Function]}
         >
           <svg
