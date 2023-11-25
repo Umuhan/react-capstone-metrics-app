@@ -58,14 +58,9 @@ const Home = () => {
   };
 
   const filterCountries2 = (e) => {
+    const value = e.target.value.toLowerCase();
     setCountriesData(
-      // eslint-disable-next-line no-use-before-define
-      countries.filter(
-        (country) => country.commonName
-          .toLowerCase()
-          .includes(e.target.value.toLowerCase()),
-        // eslint-enable-next-line no-use-before-define
-      ),
+      countries.filter((country) => country.commonName.toLowerCase().includes(value)),
     );
   };
 
