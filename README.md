@@ -1,5 +1,3 @@
-<a name="readme-top"></a>
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -9,13 +7,12 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [🚀 Live Presentation](#live-presentation)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
-  - [Install](#install)
-  - [Usage](#usage)
+  - [Available Scripts](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -25,139 +22,116 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 Metrics Webapp <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+> [Metric WebApp] is a mobile web application that allows users to view a list of countries. The wepapp has two pages: the home page and the details page. The home page displays a list of countries that could be filtered by country name. When the user clicks a specific country, the application navigates to the details page where it allows the user to view individual country with details like it's coat of arms, language and many more..
 
-**[your_project__name]** is a...
-
-## 🛠 Built With <a name="built-with"></a>
+## 🛠 Built With <a name="built-with">REACT-REDUX</a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-<!-- Features -->
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JAVASCRIPT</a></li>
+    <li><a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">BOOTSTRAP</a></li>
+    <li><a href="https://webpack.js.org/guides/getting-started/">WEBPACK</a></li>
+    <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">GITFLOW</a></li>
+    <li><a href="https://reactrouter.com/en/main/start/tutorial#setup">REACT ROUTER DOM V6</a></li>
+    <li><a href="https://react.dev/learn">REACTJS</a></li>
+    <li><a href="https://redux-toolkit.js.org/">REDUX TOOLKIT</a></li>
+    <li><a href="https://jestjs.io/docs/getting-started">JEST</a></li>
+  </ul>
+</details>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Key Features -->
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+-[Home page that will display list of item] -[Details page for detailed item] -[Back button to navigate to the home page]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🔭 Live Demo <a name="future-features"></a>
 
-> Add a link to your deployed project.
-
-- [Live Demo Link]()
+- livedDmo: [Live demo](https://react-capstone-metrics.netlify.app/)
+- loomVideo: [loom](https://www.loom.com/share/e12a7c58190943aeb1d1ebac082f3f15)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Presentation of the project -->
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
+You have to use this tools in your local machine.
 
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
+- NPM
+- NODEJS
+- GIT & GITHUB
+- Any Code Editor (VS Code... etc)
 
 ### Setup
 
 Clone this repository to your desired folder:
-
-<!--
 Example commands:
 
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git init # if not initialized git on your folder
+  git clone git@github.com:Umuhan/react-capstone-metrics-app.git
+  cd metrics
+  npm install # to install dependencies
 ```
---->
-
-### Install
-
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
-
-### Usage
-
-To run the project, execute the following command:
-
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
 
 ### Run tests
 
-To run tests, run the following command:
+To run tests, run the following command on terminal:
+Example commands:
 
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
+Test for webhint errors
 
 ```sh
-
+	npx hint .
 ```
- -->
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Test for stylelint errors
+
+```sh
+  npx stylelint "**/*.{css,scss}"
+```
+
+Test for eslint errors
+
+```sh
+	npx eslint .
+```
+
+Start the project
+
+```sh
+	npm run start
+```
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+👤 **Umuhan Mohamud**
 
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@umuhan](https://github.com/Umuhan)
+- LinkedIn: [@umuhan](https://www.linkedin.com/in/umuhan-mohamud/)
+- twitter: [@umuhan](https://twitter.com/HannyUmuhan)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -165,11 +139,8 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- Create using a different language.
+- Create additional pages
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -179,7 +150,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Umuhan/react-capstone-metrics-app/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -187,9 +158,13 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
+Your support is crucial to the success of this project! There are ways you can contribute and show your support:
 
-If you like this project...
+- Give a ⭐️ if you like this project!
+
+Remember, your support matters!
+
+Thank you for your support and for being a part of this journey!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -197,9 +172,12 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
+I would like to give credit to list of contributors:
 
-I would like to thank...
+- Credit to Nelson Sakwa the author of this original design, as required by the Creative Commons License.
+  [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
+
+- Microverse Team
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -208,3 +186,5 @@ I would like to thank...
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>

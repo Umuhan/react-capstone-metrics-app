@@ -1,8 +1,19 @@
+import React from 'react';
+import './index.css';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import CountryDetails from './components/CountryDetails';
+
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/country/:countryName" element={<CountryDetails />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
